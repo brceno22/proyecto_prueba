@@ -1,0 +1,14 @@
+11. <!DOCTYPE html>
+12. <html>
+13. <head>
+14.     <title>Blog</title>
+15. </head>
+16. <body>
+17.     <h1>Posts</h1>
+18.     <ul>
+19.         {% for post in posts %}
+20.             <li>{{ post.titulo }} - {{ post.autor }}</li>
+21.         {% endfor %}
+22.     </ul>
+23. </body>
+24. </html>
