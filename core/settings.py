@@ -33,13 +33,13 @@ INSTALLED_APPS = [
     'theme',
     
 ]
-
+TAILWIND_APP_NAME = 'theme'
 if DEBUG:
     # Add django_browser_reload only in DEBUG mode
     INSTALLED_APPS += ['django_browser_reload']
 
 
-TAILWIND_APP_NAME = 'theme'
+
 NPM_BIN_PATH = '/usr/local/bin/npm'
 
 
