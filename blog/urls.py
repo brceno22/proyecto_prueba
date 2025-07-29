@@ -1,12 +1,10 @@
 from django.urls import include, path
-from . import views
-from blog import views
-from django.contrib import admin
-from django.views.generic import RedirectView
+from .views import BlogView
+
+app_name = 'blog'
 
 urlpatterns = [
-    path('', RedirectView.as_view(url='/posts/')),  # Redirect root URL to posts
-    path('posts/', views.lista_posts, name='lista_posts'),  # URL for listing posts
-    
-]      
+    path('', BlogView.as_view(), name='home'),
+]
+
        

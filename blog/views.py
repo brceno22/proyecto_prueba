@@ -1,7 +1,11 @@
 from django.shortcuts import render
-from .models import Post
+from django.views.generic import View
 # Create your views here.
-def lista_posts(request):
-    posts = Post.objects.all() # obtener todos los posts
-    return render(request, 'blog/lista_posts.html', {'posts': posts})
+
+class BlogView(View):
+        def get(self, request, *args, **kwargs):
+         context = {
+
+            }
+         return render(request, 'blog_list.html', context)
 
