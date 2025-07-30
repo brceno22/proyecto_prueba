@@ -1,0 +1,10 @@
+<form method='POST'>
+{% csrf_token %}
+First Name: {{ form.first_name }}
+<br>
+Last Name: {{ form.last_name }}
+<br>
+Email: {{ form.email }}
+<br>
+<button type='submit'>Submit</button>
+</form>

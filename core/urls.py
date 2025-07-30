@@ -10,6 +10,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', HomeView.as_view(), name='home'),
     path('blog/', include('blog.urls', namespace='blog')),
+    path('prueba/', include('prueba.urls', namespace='prueba')),
     
 ]
 if settings.DEBUG:
